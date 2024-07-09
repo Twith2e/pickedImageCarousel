@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+button {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+i {
+  color: #02ff39;
+  font-size: 30px;
+}
+
+i:active {
+  color: #02ff3977;
+}
+
+.body-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.carousel {
+  background-color: rgba(42, 101, 165, 0.248);
+  border-radius: 5px;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  align-items: center;
+  background-color: #c0392b;
+  border-radius: 3px;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  user-select: none;
+}
+
+label:active {
+  transform: scale(0.98);
+}
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+}
+
+#prevBtn {
+  left: 5px;
+  top: 50%;
+}
+
+#nextBtn {
+  right: 5px;
+  top: 50%;
+}
+
+#imgHolder {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

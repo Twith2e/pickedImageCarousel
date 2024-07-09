@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    <main>
+      <div class="body-wrapper">
+        <div class="carousel" id="carousel">
+          <div id="imgHolder"></div>
+          <button id="prevBtn">
+            <i class="fa-solid fa-circle-chevron-left"></i></button
+          ><button id="nextBtn">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </div>
+        <input type="file" id="fileInput" />
+        <label id="label" for="fileInput"
+          ><span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="24"
+              height="24"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#50e6ff"
+                d="M39,16v25c0,1.105-0.895,2-2,2H11c-1.105,0-2-0.895-2-2V7c0-1.105,0.895-2,2-2h17L39,16z"
+              ></path>
+              <linearGradient
+                id="G~gRUFkb7DgKg4UoEi1pya_U2IFMSCuhbpE_gr1"
+                x1="28.529"
+                x2="33.6"
+                y1="15.472"
+                y2="10.4"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#3079d6"></stop>
+                <stop offset="1" stop-color="#297cd2"></stop>
+              </linearGradient>
+              <path
+                fill="url(#G~gRUFkb7DgKg4UoEi1pya_U2IFMSCuhbpE_gr1)"
+                d="M28,5v9c0,1.105,0.895,2,2,2h9L28,5z"
+              ></path>
+              <path
+                fill="#436dcd"
+                d="M34,34l-5.458-5.458c-0.673-0.673-1.758-0.687-2.449-0.033l-5.426,5.141V36H33c0.552,0,1-0.448,1-1	V34z"
+              ></path>
+              <circle cx="31" cy="24" r="2" fill="#fff"></circle>
+              <linearGradient
+                id="G~gRUFkb7DgKg4UoEi1pyb_U2IFMSCuhbpE_gr2"
+                x1="22.778"
+                x2="22.778"
+                y1="26.032"
+                y2="36.173"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#124787"></stop>
+                <stop offset=".923" stop-color="#173b75"></stop>
+                <stop offset="1" stop-color="#173a73"></stop>
+              </linearGradient>
+              <path
+                fill="url(#G~gRUFkb7DgKg4UoEi1pyb_U2IFMSCuhbpE_gr2)"
+                d="M31.556,36l-9.248-9.248c-0.913-0.913-2.388-0.933-3.325-0.045L14,31.427V34	c0,1.105,0.895,2,2,2H31.556z"
+              ></path></svg
+          ></span>
+          <span id="text">Choose an image</span></label
+        >
+      </div>
+    </main>
+  </body>
+</html>
+<script src="script.js"></script>
